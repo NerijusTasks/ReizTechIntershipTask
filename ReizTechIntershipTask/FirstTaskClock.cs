@@ -51,7 +51,7 @@
                         }
                         else
                         {
-                            Console.WriteLine("bad input, need only numbers");
+                            Console.WriteLine("bad input, need only integers");
                             break;
                         }
                     }
