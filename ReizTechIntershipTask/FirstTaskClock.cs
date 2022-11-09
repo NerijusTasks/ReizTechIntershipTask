@@ -4,32 +4,64 @@
     {
         public void StartProgram()
         {
-            Console.WriteLine("Sveiki! irasykite valandas nuo 1 iki 12");
-            double h = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Irasykite minutes nuo  1 iki 60");
-            double m = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hello! please write hours from 0 till 12");
+            string? input = Console.ReadLine();
+            int h;
+            bool success = int.TryParse(input, out h);
 
-            if (h < 0 || m < 0 ||
-            h > 12 || m > 60)
-                Console.Write("Irasykite valandas nuo 1 iki 12!");
-
-            if (h == 12)
-                h = 0;
-
-            if (m == 60)
+            if (success)
             {
-                m = 0;
-                h += 1;
-                if (h > 12)
-                    h = -12;
+                while (true)
+                {
+                    if (h < 0 || h > 12)
+                    {
+                        Console.WriteLine("please write hours from 0 till 12!");
+                        StartProgram();
+                    }
+                    else
+                    {
+                        Console.WriteLine("please write minutes from 0 till 60");
+                        int m;
+                        string? inputMinutes = Console.ReadLine();
+                        bool successMinutes = int.TryParse(inputMinutes, out m);
+
+                        if (successMinutes)
+                        {
+                            if (h == 12)
+                                h = 0;
+
+                            if (m == 60)
+                            {
+                                m = 0;
+                                h += 1;
+                            }
+
+                            if (m < 0 || m > 60)
+                            {
+                                Console.WriteLine("please write minutes from 0 till 60!");
+                                break;
+                            }
+
+                            double hourAngle = (0.5 * (h * 60 + m));
+                            double minuteAngle = (6 * m);
+
+                            double angle = Math.Abs(hourAngle - minuteAngle);
+                            double result = Math.Min(360 - angle, angle);
+                            Console.WriteLine($"The angle between arrows is {result} degrees");
+                        }
+                        else
+                        {
+                            Console.WriteLine("bad input, need only numbers");
+                            break;
+                        }
+                    }
+                    break;
+                }
             }
-
-            double hourAngle = (0.5 * (h * 60 + m));
-            double minuteAngle = (6 * m);
-
-            double angle = Math.Abs(hourAngle - minuteAngle);
-            double result = Math.Min(360 - angle, angle);
-            Console.WriteLine($"Kampas tarp rodykliu yra {result} laipsniu");
+            else
+            {
+                Console.WriteLine("bad input, need only integers");
+            }
         }
     }
 }

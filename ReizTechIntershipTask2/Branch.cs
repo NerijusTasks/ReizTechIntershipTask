@@ -3,7 +3,7 @@
     public class Branch
     {
         public int Value;
-        public Branch Left, Right;
+        public Branch? Left, Right;
 
         public Branch(int value)
         {
