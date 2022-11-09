@@ -2,9 +2,9 @@
 {
     public class BranchTree
     {
-        Branch root;
+        Branch? root;
 
-        int MaxDepth(Branch root)
+        int MaxDepth(Branch? root)
         {
             if (root == null)
                 return 0;
