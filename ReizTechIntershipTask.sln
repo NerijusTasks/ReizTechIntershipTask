@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReizTechIntershipTask", "ReizTechIntershipTask\ReizTechIntershipTask.csproj", "{0EBB7447-3E1A-4E85-814A-F98A1273DA75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReizTechIntershipTask", "ReizTechIntershipTask\ReizTechIntershipTask.csproj", "{0EBB7447-3E1A-4E85-814A-F98A1273DA75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReizTechIntershipTask2", "ReizTechIntershipTask2\ReizTechIntershipTask2.csproj", "{1CB1DB6B-0102-420F-90F2-C28197A18DBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReizTechIntershipTask2", "ReizTechIntershipTask2\ReizTechIntershipTask2.csproj", "{1CB1DB6B-0102-420F-90F2-C28197A18DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReizhTechTask2Update", "ReizhTechTask2Update\ReizhTechTask2Update.csproj", "{E8177A5E-509D-43BF-A114-BA221272FC3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1CB1DB6B-0102-420F-90F2-C28197A18DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CB1DB6B-0102-420F-90F2-C28197A18DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CB1DB6B-0102-420F-90F2-C28197A18DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8177A5E-509D-43BF-A114-BA221272FC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8177A5E-509D-43BF-A114-BA221272FC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8177A5E-509D-43BF-A114-BA221272FC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8177A5E-509D-43BF-A114-BA221272FC3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
